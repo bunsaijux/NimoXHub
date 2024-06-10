@@ -33,7 +33,7 @@ if checkKey(getgenv().Key) then
     -- ถ้าคีย์ถูกต้อง, ตรวจสอบไอดี
     if checkId(getgenv().id) then
         -- ถ้าไอดีถูกต้อง, โหลดสคริปต์
-        loadstring(game:HttpGet('https://pastebin.com/raw/BANPVZ2Q'))()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/bunsaijux/NimoXHub/main/BloxFruitNew'))()
     else
         game.Players.LocalPlayer:Kick("Invalid ID! Please Dm Nimokung.")
     end
