@@ -1,0 +1,42 @@
+local keys = {
+    "NIMO-OKXJVL-12345",
+    "NIMO-QZSGHE-67890"
+}
+
+local ids = {
+    "123456789",
+    "5123432161"
+}
+
+-- ฟังก์ชันตรวจสอบคีย์
+local function checkKey(inputKey)
+    for _, key in ipairs(keys) do
+        if inputKey == key then
+            return true
+        end
+    end
+    return false
+end
+
+-- ฟังก์ชันตรวจสอบไอดี
+local function checkId(inputId)
+    for _, id in ipairs(ids) do
+        if inputId == id then
+            return true
+        end
+    end
+    return false
+end
+
+-- ตรวจสอบคีย์
+if checkKey(getgenv().Key) then
+    -- ถ้าคีย์ถูกต้อง, ตรวจสอบไอดี
+    if checkId(getgenv().id) then
+        -- ถ้าไอดีถูกต้อง, โหลดสคริปต์
+        loadstring(game:HttpGet('https://pastebin.com/raw/BANPVZ2Q'))()
+    else
+        game.Players.LocalPlayer:Kick("Invalid ID! Please Dm Nimokung.")
+    end
+else
+    game.Players.LocalPlayer:Kick("Invalid Key! Please Dm Nimokung.")
+end
