@@ -1,3 +1,7 @@
+--discord.gg/boronide, code generated using luamin.js™
+
+
+
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local L_1_ = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local L_2_ = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
@@ -2425,7 +2429,7 @@ do
 					end
 				end
 			end)
-		end)
+		end)ดฟ
 	end)
 
 
@@ -2675,7 +2679,7 @@ do
 		elseif _G.FastAttackFaiFao_Mode == "Normal Attack" then
 			_G.Fast_Delay = 0.25
 		elseif _G.FastAttackFaiFao_Mode == "Super Fast Attack" then
-			_G.Fast_Delay = 0.001
+			_G.Fast_Delay = 0.01
 		end
 	end)
 	local L_97_ = L_5_.Main:AddDropdown("DropdownSelectWeapon", {
